@@ -1,0 +1,32 @@
+{
+    "version": 1,
+    "projects": {
+      "gwen": {
+        "projectType": "application",
+        "root": "",
+        "sourceRoot": "src",
+        "architect": {
+          "build": {
+            "builder": "@angular-devkit/build-angular:browser",
+            "options": {
+              "outputPath": "dist/gwen",
+              "index": "src/index.html",
+              "main": "src/main.ts",
+              "polyfills": ["zone.js"],
+              "tsConfig": "tsconfig.json",
+              "aot": true
+            }
+          },
+          "serve": {
+            "builder": "@angular-devkit/build-angular:dev-server",
+            "options": {
+              "buildTarget": "gwen:build"
+            }
+          }
+        }
+      }
+    },
+    "cli": {
+      "analytics": "df272477-92ae-47d2-b7ef-1c2b2cc6169a"
+    }
+  }
