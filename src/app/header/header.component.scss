@@ -3,43 +3,67 @@
 :host {
     position: relative;
     z-index: 2;
+
+    .header {
+        font-family: $ffamily;
+        user-select: none;
+        
+        p {
+            margin: 0;
+        }
+
+        .title {
+            background: $font-title-gradient;
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: 200px;
+            text-align: center;
+            line-height: 200px;
+            margin-bottom: 50px;
+            transition: font-size 0.3s ease, line-height 0.3s ease;
+        }
+        
+        .subtitle {
+            background: $font-title-gradient;
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: 36px;
+            text-align: center;
+            transition: font-size 0.3s ease, line-height 0.3s ease;
+        }
+    }
+
+    .shadow {
+        width: 100%;
+        position: absolute;
+        height: 880px;
+        top: -263px;
+        left: 0;
+        background: radial-gradient(ellipse, #000, #0000 70%);
+        z-index: -1;
+        transition: opacity 0.3s ease;
+    }
+
+    @media (max-width: 900px) {
+        .header {
+            margin-left: 30px;
+
+            .title {
+                font-size: 100px;
+                line-height: 100px;
+                margin-bottom: 10px;
+            }
+
+            .subtitle {
+                font-size: 24px;
+            }
+        }
+
+        .shadow {
+            opacity: 0.5;       
+        }
+    }
 }
 
-.header {
-    font-family: $ffamily;
-    user-select: none;
-}
-
-p {
-    margin: 0;
-}
-
-.title {
-    background: $font-title-gradient;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-size: 200px;
-    text-align: center;
-    line-height: 200px;
-    margin-bottom: 50px;
-}
-
-.subtitle {
-    background: $font-title-gradient;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-size: 36px;
-    text-align: center;
-}
-
-.shadow {
-    width: 100%;
-    position: absolute;
-    height: 880px;
-    top: -263px;
-    left: 0;
-    background: radial-gradient(ellipse, #000, #0000 70%);
-    z-index: -1;
-}

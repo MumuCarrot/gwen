@@ -30,4 +30,14 @@ html, body {
     opacity: 0.4;
     z-index: 0;
 }
-  
+
+a {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    color: $font-content-color;
+
+    &:hover {
+        color: $font-content-hover-color;
+    }
+}

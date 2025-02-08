@@ -20,6 +20,7 @@
         .champion_picture {
             width: 100%;
             transition: transform 0.3s ease;
+            margin-bottom: -4px;
     
             &:hover {
                 transform: scale(1.1);
@@ -38,7 +39,6 @@
         
         a {
             font-size: 24px;
-            color: $font-content-color;
             text-decoration: none;
             display: flex;
             width: 280px;
@@ -51,15 +51,11 @@
             }
 
             &:hover {
-                color: $font-content-hover-color;
-    
                 .microphone {
                     fill: $font-content-hover-color;
                 }
             }
         }
-
-
     }
 
     .champion_biogaphy {
@@ -78,7 +74,6 @@
             font-size: 16px;
             line-height: 1.7;
         }
-
     }
     
     .top {
