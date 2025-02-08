@@ -1,0 +1,13 @@
+<img src="./gwen.jpg" alt="champion from league" class="champion_picture">
+<div class="champion_audio_biogaphy">
+    Listen to this article
+</div>
+<div class="champion_biogaphy">
+    <p class="biography">Biography</p>
+    @if(loaded) {
+        @for(paragraph of champ.biography; track $index) {
+            <p class="paragraph">{{paragraph}}</p>
+        }
+    }
+</div>
+<div class="top" (click)="scrollToTop()">▲ TOP ▲</div>

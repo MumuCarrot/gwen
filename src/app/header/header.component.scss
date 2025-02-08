@@ -1,0 +1,45 @@
+@use '../variables' as *;
+
+:host {
+    position: relative;
+    z-index: 2;
+}
+
+.header {
+    font-family: $ffamily;
+    user-select: none;
+}
+
+p {
+    margin: 0;
+}
+
+.title {
+    background: $font-title-gradient;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 200px;
+    text-align: center;
+    line-height: 200px;
+    margin-bottom: 50px;
+}
+
+.subtitle {
+    background: $font-title-gradient;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 36px;
+    text-align: center;
+}
+
+.shadow {
+    width: 100%;
+    position: absolute;
+    height: 880px;
+    top: -263px;
+    left: 0;
+    background: radial-gradient(ellipse, #000, #0000 70%);
+    z-index: -1;
+}

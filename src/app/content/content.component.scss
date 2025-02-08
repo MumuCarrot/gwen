@@ -1,0 +1,64 @@
+@use '../variables' as *;
+
+:host {
+    position: relative;
+    width: 58%;
+    margin: 61px auto 50px;
+    padding: 64px 32px;
+    background-color: #060e1f;
+    z-index: 10;
+
+    .champion_picture {
+        width: 100%;
+    }
+    
+    .champion_audio_biogaphy {
+        width: 100%;
+        height: 64px;
+        background-color: #010A13;
+        font-size: 24px;
+        font-family: $ffamily;
+        align-content: center;
+        text-align: center;
+        color: $font-content-color;
+        cursor: pointer;
+        user-select: none;
+
+        &:hover {
+            color: $font-content-hover-color
+        }
+    }
+
+    .champion_biogaphy {
+        .biography {
+            font-family: $ffamily;
+            color: $font-content-color;
+            font-size: 24px;
+            margin: 31px 0 1px;
+            border-bottom: #3E4451 solid 1px;
+            padding: 6px 0;
+        }
+
+        .paragraph {
+            margin: 24px 0 0;
+            color: white;
+            font-size: 16px;
+            line-height: 1.7;
+        }
+
+    }
+    
+    .top {
+        font-family: $ffamily;
+        color: $font-content-color;
+        font-weight: bold;
+        font-size: 16px;
+        margin-top: 46px;
+        text-align: center;
+        cursor: pointer;
+
+        &:hover {
+            color: $font-content-hover-color
+        }
+    }
+}

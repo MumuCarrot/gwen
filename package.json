@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server",
-    "build": "webpack --mode production"
+    "ng": "ng",
+    "serve": "ng serve",
+    "build": "ng build"
   },
   "keywords": [],
   "author": "",
@@ -24,6 +25,9 @@
     "zone.js": "~0.15.0"
   },
   "devDependencies": {
+    "@angular-devkit/build-angular": "~19.0.0",
+    "@angular/cli": "~19.0.0",
+    "@angular/compiler-cli": "~19.0.0",
     "css-loader": "^7.1.2",
     "file-loader": "^6.2.0",
     "html-loader": "^5.1.0",
