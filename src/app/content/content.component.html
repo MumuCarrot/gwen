@@ -6,7 +6,7 @@
     <p class="biography">Biography</p>
     @if(loaded) {
         @for(paragraph of champ.biography; track $index) {
-            <p class="paragraph">{{paragraph}}</p>
+            <p class="paragraph" [innerHTML]="paragraph"></p>
         }
     }
 </div>
