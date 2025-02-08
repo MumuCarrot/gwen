@@ -8,25 +8,58 @@
     background-color: #060e1f;
     z-index: 10;
 
-    .champion_picture {
+    @media (max-width: 1400px) {
+        width: 90%;
+    }
+
+    .picture_container {
+        overflow: hidden;
         width: 100%;
+        height: 34%;
+        
+        .champion_picture {
+            width: 100%;
+            transition: transform 0.3s ease;
+    
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
     }
     
     .champion_audio_biogaphy {
         width: 100%;
         height: 64px;
         background-color: #010A13;
-        font-size: 24px;
         font-family: $ffamily;
         align-content: center;
         text-align: center;
         color: $font-content-color;
-        cursor: pointer;
-        user-select: none;
+        
+        a {
+            font-size: 24px;
+            color: $font-content-color;
+            text-decoration: none;
+            display: flex;
+            width: 280px;
+            margin: 0 auto;
+            
+            .microphone {
+                height: 40px;
+                width: 40px;
+                fill: $font-content-color;
+            }
 
-        &:hover {
-            color: $font-content-hover-color
+            &:hover {
+                color: $font-content-hover-color;
+    
+                .microphone {
+                    fill: $font-content-hover-color;
+                }
+            }
         }
+
+
     }
 
     .champion_biogaphy {
