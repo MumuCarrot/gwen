@@ -1,2 +1,3 @@
-<app-header></app-header>
-<content-comp></content-comp>
+<div class="dimmer"></div>
+<app-header [@fadeInOutHeader]="loaded ? 'true' : 'false'"></app-header>
+<content-comp [champ]="champ" [@fadeInOutBody]="loaded ? 'true' : 'false'"></content-comp>

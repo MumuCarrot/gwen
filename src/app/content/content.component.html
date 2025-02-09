@@ -19,10 +19,12 @@
 </div>
 <div class="champion_biogaphy">
     <p class="biography">Biography</p>
-    @if(loaded) {
-        @for(paragraph of champ.biography; track $index) {
-            <p class="paragraph" [innerHTML]="paragraph"></p>
-        }
+    @if (champ) {
+        <div @listAnimation>
+            @for(paragraph of champ.biography; track $index) {
+                <p class="paragraph text-item" [innerHTML]="paragraph"></p>
+            }
+        </div>
     }
 </div>
 <div class="top" (click)="scrollToTop()">▲ TOP ▲</div>
